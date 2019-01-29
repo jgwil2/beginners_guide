@@ -1,6 +1,6 @@
-#Genesis
+# Genesis
 
-##Problems
+## Problems
 
 1. Q: Is there a difference between the statements "Cheap food isn't good. Good food isn't cheap?"
 
@@ -30,7 +30,7 @@
 
     2. If $A \cup B = B$, then $A \subseteq B$.
 
-        If $A \cup B = B$ A ⋃ B = B, then A does not contain any elements that are not in B.
+        If $A \cup B = B$, then A does not contain any elements that are not in B.
 
         Therefore A is a subset of B.
 
@@ -78,6 +78,8 @@
     Since $x \in A$, it is also the case that $x \in A \cup B$ but since $x \notin B$, it is also the case that $x \notin A \cap B$.
     Therefore, $A \cap B \neq A \cup B$.
 
+    So if $A \cap B = A \cup B$, then it must be the case that $A = B$.
+
 6. Q: Which, if either, of the following statements is true:
 
     1. If $A \subseteq B$ then $A' \subseteq B'$.
@@ -102,3 +104,6 @@
     But we are given that $A \subseteq B$, so such an element cannot exist.
 
     Therefore statement 2 is true.
+
+### Exercises
+
