@@ -12,7 +12,7 @@ We will show that there cannot be a number $x$ such that page $x$ contains the s
 
 Therefore the set of natural numbers is numerically smaller (has a lower cardinality) than its power set (the set of all possible subsets of natural numbers).
 
-Consider a page $x$ such that the list of numbers on page $x$ ($p(x)$) is equal to $U$ (the set of all unselfish numbers).
+Consider a page $x$ such that the list of numbers on page $x$ (i.e. $p(x)$) is equal to $U$ (the set of all unselfish numbers).
 
 Either $x \in U$ or $x \notin U$.
 

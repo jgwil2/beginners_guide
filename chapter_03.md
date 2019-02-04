@@ -4,7 +4,7 @@
 
 Call a set *ordinary* if it does not contain itself, and extraordinary if it does contain itself.
 
-Whether or not extraordinary sets exit, ordinary sets certainly do.
+Whether or not extraordinary sets exist, ordinary sets certainly do.
 
 Consider the set $M$ of all ordinary sets; is $M$ ordinary or not?
 
@@ -21,6 +21,10 @@ This is illustrated by the barber paradox: a barber shaves all men in town who d
 2. Berry Paradox: "The smallest number not describable in less than eleven words."
 
    Solution: the word "describable" is not well-defined.
+
+   ### Well-defined
+
+   In mathematics, an expression is called *well-defined* or *unambiguous* if its definition assigns it a unique interpretation (cf. [Wikipedia](https://en.wikipedia.org/wiki/Well-defined)).
 
 3. Because the description gives contradictory information, it cannot be considered well-defined. Since it is not genuine, it is considered a *pseudo-description*.
 
@@ -75,6 +79,8 @@ This is illustrated by the barber paradox: a barber shaves all men in town who d
    If $x \in S_x$, then we can create an infinite path from $x$ to $S_x$, then choosing $x$ again which again leads to $S_x$ (as in the hypergame paradox), so there is an infinite path in $M$, which is also a contradiction.
 
    Therefore there can be no $x$ such that $S_x = M$.
+
+   Note: why can $M$ not be empty and why does this matter?
 
 6. The notion of a genuine description is not well-defined.
 
