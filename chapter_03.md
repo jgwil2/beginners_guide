@@ -21,6 +21,7 @@ This is illustrated by the barber paradox: a barber shaves all men in town who d
 2. Berry Paradox: "The smallest number not describable in less than eleven words."
 
    Solution: the word "describable" is not well-defined.
+   (cf. [Wikipedia](https://en.wikipedia.org/wiki/Berry_paradox))
 
    ### Well-defined
 
