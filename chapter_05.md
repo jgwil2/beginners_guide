@@ -344,4 +344,4 @@ A formula that is true under some interpretations and false under others is *con
 
     But this would be a contradiction, since a knight cannot make a false statement.
 
-    Therefore, the implication must be true, and since it is true, the antecedent (that the speaker is a knight) also must be true, and therefore the subsequent, that there must be gold here, also follows.
+    Therefore, the implication must be true, and since it is true, the antecedent (that the speaker is a knight) also must be true (since only a knight makes true statements), and therefore the consequent, that there must be gold here, also follows.
