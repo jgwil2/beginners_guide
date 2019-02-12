@@ -248,3 +248,100 @@ A formula that is true under some interpretations and false under others is *con
    Tautology.
 
 2. What method can be used to find a formula to match an arbitrary truth table?
+
+   | $p$  | $q$  | $r$  | $X$  |
+   | ---- | ---- | ---- | ---- |
+   | T    | T    | T    | T    |
+   | T    | T    | F    | F    |
+   | T    | F    | T    | T    |
+   | F    | T    | T    | F    |
+   | T    | F    | F    | T    |
+   | F    | T    | F    | F    |
+   | F    | F    | T    | F    |
+   | F    | F    | F    | F    |
+
+   Pass
+
+   ### Propositional Constants
+
+   Formulas may include the symbols $t$ and $f$, whose values are always true and false respectively.
+
+   Any formula involving $t$ or $f$ is equivalent to a formula involving no constants, or $t$ alone, or $f$ alone.
+
+3. Reduce the following formulas either to a formula with no constants, or $t$, or $f$.
+
+   a. $((t \to p) \and (q \or f)) \to ((q \to f) \or (r \and t))$
+
+   $(p \and q) \to (\neg q \or r)$
+
+   b. $(p \or t) \to q$
+
+   $t \to q$
+
+   $q$
+
+   c. $\neg (p \or t) \equiv (f \to q)$
+
+   $\neg t \equiv t$
+
+   $f \equiv t$
+
+   $f$
+
+4. Knights and Knaves
+
+   a. If A says, "Both of us are knaves," then he is saying that he is a liar, which is a contradiction.
+
+   But his statement is still false if B is a knight, since only one of the two conditions need be false in order for the statement to be false.
+
+   Therefore, A is a knave and B is a knight
+
+   b. If A says, "At least one of us is a knave," then A must be a knight and B a knave.
+
+   If A is a knave, then he would have made a true statement, which is a contradiction.
+
+   So A must be a knight, and since his statement is true, B must be a knave.
+
+   c. A says, "B and I are of the same type, either both knights or both knaves."
+
+   If A is a knight, then B also has to be a knight, since A's statement is true.
+
+   If A is a knave, then they cannot both be of the same type, so B must be a knight.
+
+   Hence, B must be a knight, but we cannot determine A's type.
+
+5. $p \or q \iff \neg (\neg p \and \neg q)$ cf. [nand2tetris](https://www.nand2tetris.org/)
+
+6. $p \and q \iff \neg (\neg p \or \neg q)$
+
+7. $p \to q \iff \neg(p \and \neg q)$
+
+8. $p \to q \iff \neg p \or q$
+
+9. $p \and q \iff \neg , \to$
+
+10. $p \or q \iff \to,\neg$
+
+11. $p \equiv q \iff \and,\to$
+
+12. $p \equiv q \iff \neg,\and,\or$
+
+13. $\neg p \iff \to,f$
+
+    ### Joint Denial
+
+14. pass
+
+15. pass
+
+16. pass
+
+17. "If I am a knight, then there is gold here."
+
+    The only way for a statement of implication to fail to be true is if the antecedent is true and the consequent is false.
+
+    In this case, then, the statement, "I am a knight" would have to be true.
+
+    But this would be a contradiction, since a knight cannot make a false statement.
+
+    Therefore, the implication must be true, and since it is true, the antecedent (that the speaker is a knight) also must be true, and therefore the subsequent, that there must be gold here, also follows.
