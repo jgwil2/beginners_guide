@@ -322,17 +322,45 @@ A formula that is true under some interpretations and false under others is *con
 
 10. $p \or q \iff \to,\neg$
 
-11. $p \equiv q \iff \and,\to$
+11. $p \or q \iff \to$
 
-12. $p \equiv q \iff \neg,\and,\or$
+12. $p \equiv q \iff \and,\to$
 
-13. $\neg p \iff \to,f$
+13. $p \equiv q \iff \neg,\and,\or$
+
+14. $\neg p \iff \to,f$
 
     ### Joint Denial
 
-14. pass
+    We show above that all five logical connectives can be defined in terms of $\neg,\and$, or $\neg,\or$, or $\neg,\to$, or $\to,f$.
+
+    There is a single connective, *joint denial*, that can define all other connectives.
+
+    Joint denial means, "Both $p$ and $q$ are false," or symbolically, $p \downarrow q$ (cf. NOR).
+
+    | $p$  | $q$  | $p \downarrow q$ |
+    | ---- | ---- | ---------------- |
+    | T    | T    | F                |
+    | T    | F    | F                |
+    | F    | T    | F                |
+    | F    | F    | T                |
 
 15. pass
+
+    ### Alternative Denial
+
+    There is another single connective from which all others can be derived.
+
+    Alternative denial means, "At least one of $p,q$ is false," and is written $p \mid q$ or $p \uparrow q$.
+
+    Also called Sheffer stroke (cf. NAND).
+
+    | $p$  | $q$  | $p \uparrow q$ |
+    | ---- | ---- | -------------- |
+    | T    | T    | F              |
+    | T    | F    | T              |
+    | F    | T    | T              |
+    | F    | F    | T              |
 
 16. pass
 
@@ -345,3 +373,5 @@ A formula that is true under some interpretations and false under others is *con
     But this would be a contradiction, since a knight cannot make a false statement.
 
     Therefore, the implication must be true, and since it is true, the antecedent (that the speaker is a knight) also must be true (since only a knight makes true statements), and therefore the consequent, that there must be gold here, also follows.
+
+18. pass
