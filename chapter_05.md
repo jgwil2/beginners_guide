@@ -260,7 +260,15 @@ A formula that is true under some interpretations and false under others is *con
    | F    | F    | T    | F    |
    | F    | F    | F    | F    |
 
-   Pass
+   Every row of the table has a value of either true or false; let's consider only those whose value is true.
+
+   For each such row, write each proposition (or its negation) and connect them with $\and$, creating a formula whose truth value will match that of the table for that row.
+
+   For the above table we get the following formulas, $p \and q \and r$, $p \and q \and \neg r$, $p \and \neg q \and \neg r$.
+
+   Then, since we want a formula that is true iff one of the resulting formulas are true, we simply combine them with $\or$.
+
+   For this table, that gives us $(p \and q \and r) \or (p \and q \and \neg r) \or (p \and \neg q \and \neg r)$.
 
    ### Propositional Constants
 
@@ -310,7 +318,7 @@ A formula that is true under some interpretations and false under others is *con
 
    Hence, B must be a knight, but we cannot determine A's type.
 
-5. $p \or q \iff \neg (\neg p \and \neg q)$ cf. [nand2tetris](https://www.nand2tetris.org/)
+5. $p \or q \iff \neg (\neg p \and \neg q)$
 
 6. $p \and q \iff \neg (\neg p \or \neg q)$
 
@@ -318,19 +326,19 @@ A formula that is true under some interpretations and false under others is *con
 
 8. $p \to q \iff \neg p \or q$
 
-9. $p \and q \iff \neg , \to$
+9. $p \and q \iff \neg (p \to \neg q)$
 
-10. $p \or q \iff \to,\neg$
+10. $p \or q \iff \neg p \to q$
 
-11. $p \or q \iff \to$
+11. $p \or q \iff (p \to q) \to q$
 
-12. $p \equiv q \iff \and,\to$
+12. $p \equiv q \iff (p \to q) \and (q \to p)$
 
-13. $p \equiv q \iff \neg,\and,\or$
+13. $p \equiv q \iff (p \and q) \or \neg (p \or q)$
 
-14. $\neg p \iff \to,f$
+14. $\neg p \iff p \to f$
 
-    ### Joint Denial
+    # Joint Denial
 
     We show above that all five logical connectives can be defined in terms of $\neg,\and$, or $\neg,\or$, or $\neg,\to$, or $\to,f$.
 
@@ -345,7 +353,11 @@ A formula that is true under some interpretations and false under others is *con
     | F    | T    | F                |
     | F    | F    | T                |
 
-15. pass
+15. $\neg p \iff p \downarrow p$
+
+    $\neg (p \downarrow q) \iff p \or q$
+
+    By problem 6, $\and$ can be derived from $\or$ and $\neg$, and by problem 2 any truth table can be derived from $\and, \or, \neg$.
 
     ### Alternative Denial
 
@@ -362,7 +374,13 @@ A formula that is true under some interpretations and false under others is *con
     | F    | T    | T              |
     | F    | F    | T              |
 
-16. pass
+16. $\neg p \iff p \uparrow p$
+
+    (Incidentally, $p \uparrow p \iff p \downarrow p \iff \neg p$)
+
+    $\neg (p \uparrow q) \iff p \and q$
+
+    By problem 5, $\or$ can be derived from $\neg$ and $\and$, and by problem 2 any truth table can be derived from $\and, \or, \neg$.
 
 17. "If I am a knight, then there is gold here."
 
@@ -374,4 +392,10 @@ A formula that is true under some interpretations and false under others is *con
 
     Therefore, the implication must be true, and since it is true, the antecedent (that the speaker is a knight) also must be true (since only a knight makes true statements), and therefore the consequent, that there must be gold here, also follows.
 
-18. pass
+18. $p \and q \iff (p \to q) \equiv p$
+
+    This relates to 19 because in 19, we take the proposition $p \to q$ (if I am a knight, there is gold), and make it's truth value equivalent to that of $p$ (since only knights can make true statements).
+
+    As we saw above, the statement was true, and its being true implied that both the antecedent and the precedent were true.
+
+    If either the antecedent, the precedent, or both had been false, the entire equivalence would have been false.
