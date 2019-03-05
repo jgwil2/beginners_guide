@@ -32,7 +32,9 @@ Conclusion: $P$ holds for all natural numbers.
 
 (2) (a) Prove the principle of complete mathematical induction using the principle of mathematical induction. (b) Show that the principle of mathematical induction logically follows from the principle of complete mathematical induction.
 
-(a) There are no natural numbers less than $0$, so $P$ must hold for all natural numbers less than 0.
+(a) We start with the assumption that $P$ is such that if $P(n)$ for all $m < n$, then $P(n)$, and we show that $P(0)$ and also that $P(n) \implies P(n + 1)$.
+
+There are no natural numbers less than $0$, so $P$ must hold for all natural numbers less than 0.
 
 By the induction premise then, $P$ also holds for $0$ (written $P(0)$).
 
@@ -44,9 +46,23 @@ We use mathmatical induction on $Q$ (we show that $Q(0)$ and that $Q(n) \implies
 
 $Q$ vacuously holds for all natural numbers less than $0$, and $P(0) \implies Q(0)$ (thus the base case holds).
 
-Now given a number $n$ such that $Q(n)$, $P$ also holds for $n$ and all numbers less than $n$.
+Now given a number $n$ such that $Q(n)$, $P$ also holds for $n$ and all numbers less than $n$, by the definition of $Q$.
 
-Thus, by the induction premise, $P$ also holds for $n + 1$ and $P(n + 1) \implies Q(n + 1)$.
+Thus, by our starting assumption about $P$, $P$ also holds for $n + 1$.
 
 This proves $Q(0)$ and $Q(n) \implies Q(n + 1)$, and therefore by mathematical induction $Q$ holds for all natural numbers, and this fact also implies that $P$ holds for all natural numbers.
+
+(b) We start with the assumption that $P$ is a property such that (1) $P(0)$ and (2) $\forall n, P(n) \implies P(n + 1)$, and we show that if $P$ holds for all numbers less than $n$ then it also holds for $n$.
+
+So let us assume that $P$ holds for all numbers less than $n$.
+
+For $n = 0$, we are already given that $P(0)$.
+
+For $n \neq 0$, $n = m + 1$ for the number $m = n - 1$.
+
+Since $m < n$, we know that $P$ holds for $m$, and we are given that $P(m) \implies P(m + 1)$, therefore $P$ also holds for $n$.
+
+So if $P$ holds for all numbers less than $n$, $P$ also holds for $n$.
+
+Thus, mathematical induction follows from complete mathematical induction, and vice versa, and the two are therefore equivalent.
 
