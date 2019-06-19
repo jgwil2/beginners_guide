@@ -68,3 +68,22 @@ $$
 &(3)\space X, Y \vdash Z \quad\quad& \text{(By 2, $F_2$)}\\
 \end{align*}
 $$
+
+(1) Prove the following with axiom schemes $S_1, S_2, S_3, S_4$.
+
+$T_1$. $\vdash X \to (Y \to Y)$
+$$
+\begin{align*}
+&(1) \space (X \and Y) \to Y \vdash X \to (Y \to Y) \quad\quad& \text{($F_3$)}\\
+&(2) \space \vdash (X \and Y) \to Y \quad\quad& \text{($S_1$)}\\
+&(3) \space \vdash X \to (Y \to Y) \quad\quad& \text{(By 2, 1, MP)}
+\end{align*}
+$$
+$T_2$. $\vdash Y \to Y$
+$$
+\begin{align*}
+&(1) \space \vdash X \to (Y \to Y) \quad\quad& \text{($T_1$)}\\
+&(2) \space \vdash [(X \and Y) \to Y] \to (Y \to Y) \quad\quad& \text{(sub $S_1$ or any provable formula for X)}\\
+&(3) \space \vdash Y \to Y \quad\quad& \text{(By MP)}
+\end{align*}
+$$
