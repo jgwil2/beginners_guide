@@ -34,4 +34,28 @@ First-order logic deals with the connectives of propositional logic, along with 
 
    A: It is not possible for knights or knaves to make both of those statements, even on an island of mixed inhabitants. Assume both statements are true. Then every knight must not smoke, by (2), and at least one knave must smoke, by (1). But suppose a knave also made those statements: (2) would be false, but (1) would be true, which is impossible since knaves don't tell the truth.
 
-   
+   ## The Universal and Existential Quantifiers
+
+   We use the letters $x, y, z$ to stand for arbitrary objects of some domain under consideration (p. 134).
+
+   Given a property $P$ and an object $x$, the proposition that $x$ has property $P$ is written $P x$.
+
+   The proposition that all objects $x$ have property $P$ is written $\forall x P x$ (universal quantifier).
+
+   The proposition that some (at least one) $x$ has property $P$ is written $\exists x P x$ (existential quantifier).
+
+   These quantifiers are used along with the logical connectives from propositional logic to form propositions in first-order logic.
+
+   For example, let $G$ be the property of being good. $\forall x G x$ means all people are good. $\exists x G x$ means at least one person is good.
+
+   How do we say no one is good? $\neg \exists x G x$, or $\forall x (\neg G x)$.
+
+   Let $g$ stand for God and $xHy$ mean "x helps y." How can we say "God helps those who help themselves?"
+
+   The English-language statement is ambiguous; it could mean (a) God helps all those who help themselves (and maybe others), (b) God only helps those who help themselves (and perhaps not all of them), or (c) God helps all those who help themselves, and no one else.
+
+   (a) $\forall x (x H x \to g H x)$
+
+   (b) $\forall x (g H x \to x H x)$
+
+   (c) $\forall x (x H x \equiv g H x)$
