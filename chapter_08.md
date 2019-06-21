@@ -59,3 +59,23 @@ First-order logic deals with the connectives of propositional logic, along with 
    (b) $\forall x (g H x \to x H x)$
 
    (c) $\forall x (x H x \equiv g H x)$
+
+9. Q: Let $h$ stand for Holmes and let $m$ stand for Moriarty. Let $x C y$ stand for $x$ can catch $y$.
+
+   (a) $\forall x (x C m \to h C x)$
+
+   (b) $\forall x (m C x \to h C x)$
+
+   (c) idem.
+
+   (d) $\exists x (x C m) \to h C m$
+
+   (e) $\forall x (x C m) \to h C m$
+
+   (f) $\forall x (x C h \to x C m)$
+
+   (g) $\forall x (x C h \to x C m)$
+
+   (h) $\forall x \exists y (x C y \and \neg y C m)$
+
+   (i) $\forall x \forall y ((x C h \and h C y) \to x C y)$; alternatively, $\forall x (x C h \to \forall y (h C y \to x C y))$
