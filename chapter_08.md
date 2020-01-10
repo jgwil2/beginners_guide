@@ -79,3 +79,16 @@ First-order logic deals with the connectives of propositional logic, along with 
    (h) $\forall x \exists y (x C y \and \neg y C m)$
 
    (i) $\forall x \forall y ((x C h \and h C y) \to x C y)$; alternatively, $\forall x (x C h \to \forall y (h C y \to x C y))$
+
+10. Q: Let us symbolize "$x$ knows $y$" by $xKy$
+
+   (a) $\forall x \exists y (xKy)$
+
+   (b) $\forall x \exists y (yKx)$; or $\exists x \forall y (xKy)$
+
+   (c) $\forall x \exists y (xKy)$
+
+   (d) $\forall x \exists y (xKy \and \neg yKx)$
+
+   (e) $\exists x \forall y (yKx \to xKy)$
+
