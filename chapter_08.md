@@ -82,13 +82,31 @@ First-order logic deals with the connectives of propositional logic, along with 
 
 10. Q: Let us symbolize "$x$ knows $y$" by $xKy$
 
-   (a) $\forall x \exists y (xKy)$
+    (a) $\forall x \exists y (xKy)$
 
-   (b) $\forall x \exists y (yKx)$; or $\exists x \forall y (xKy)$
+    (b) $\forall x \exists y (yKx)$; or $\exists x \forall y (xKy)$
 
-   (c) $\forall x \exists y (xKy)$
+    (c) $\forall x \exists y (xKy)$
 
-   (d) $\forall x \exists y (xKy \and \neg yKx)$
+    (d) $\forall x \exists y (xKy \and \neg yKx)$
 
-   (e) $\exists x \forall y (yKx \to xKy)$
+    (e) $\exists x \forall y (yKx \to xKy)$
+
+11. (a) $\exists x(Dx) \to Db$
+
+    (b) $Db \and \forall x (Dx \to x = b)$ or, alternatively, $\forall x(Dx \equiv x = b)$
+
+12. (a) $\forall x \exists y (y > x)$
+
+    (b) $\forall x(\neg(x = 0) \to (\exists y (x > y)))$
+
+    (c) $\forall x((x = 0) \equiv \neg \exists y (y < x))$
+
+    (d) $x$ is equal to $y$ is $\neg (x < y) \and \neg (x > y)$
+
+      $x$ is unequal to $y$ is $(x < y) \or (x > y)$
+
+13. $\forall x (Px) \equiv \neg \exists x (\neg Px)$
+
+    Conversely, $\exists x (Px) \equiv \neg \forall (\neg Px)$
 
