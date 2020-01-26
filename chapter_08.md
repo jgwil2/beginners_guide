@@ -106,7 +106,9 @@ First-order logic deals with the connectives of propositional logic, along with 
 
       $x$ is unequal to $y$ is $(x < y) \or (x > y)$
 
-13. $\forall x (Px) \equiv \neg \exists x (\neg Px)$
+13. Interdependence of $\forall$ and $\exists$. Each can be defined in terms of the other.
+
+    $\forall x (Px) \equiv \neg \exists x (\neg Px)$
 
     Conversely, $\exists x (Px) \equiv \neg \forall (\neg Px)$
 
